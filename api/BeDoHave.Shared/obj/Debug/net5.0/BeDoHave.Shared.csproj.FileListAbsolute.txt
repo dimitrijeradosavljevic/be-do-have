@@ -1,0 +1,12 @@
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\obj\Debug\net5.0\BeDoHave.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\obj\Debug\net5.0\BeDoHave.Shared.AssemblyInfoInputs.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\obj\Debug\net5.0\BeDoHave.Shared.AssemblyInfo.cs
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\obj\Debug\net5.0\BeDoHave.Shared.csproj.CoreCompileInputs.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\bin\Debug\net5.0\BeDoHave.Shared.deps.json
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\bin\Debug\net5.0\BeDoHave.Shared.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\bin\Debug\net5.0\ref\BeDoHave.Shared.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\bin\Debug\net5.0\BeDoHave.Shared.pdb
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\obj\Debug\net5.0\BeDoHave.Shared.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\obj\Debug\net5.0\ref\BeDoHave.Shared.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\obj\Debug\net5.0\BeDoHave.Shared.pdb
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Shared\obj\Debug\net5.0\BeDoHave.Shared.csproj.AssemblyReference.cache

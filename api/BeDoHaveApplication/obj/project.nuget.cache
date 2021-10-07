@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BX1K5n05Zj7rMPgLnlYZZJn1jPGMgZQXiE6OJzCfnr4xt9wR+Cx2x1qB7f7aYYB99V250cLlc7/E4e1eDCkdiA==",
+  "success": true,
+  "projectFilePath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHaveApplication\\BeDoHaveApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dimitrije\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Dimitrije\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,7 @@
+{
+  "name": "be-do-have-web",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

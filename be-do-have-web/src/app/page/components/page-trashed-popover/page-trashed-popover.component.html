@@ -1,0 +1,29 @@
+<ion-content>
+  <ion-item>
+    <ion-input placeholder="Filter by page title" [formControl]="titleFilter" *ngIf="titleFilterActive"></ion-input>
+  </ion-item>
+
+  <ion-list>
+    <ion-item *ngFor="let page of pages">
+      <ion-label class="ion-no-margin">
+        <h6>{{ page.title }}</h6>
+        <ion-note>{{ page.path }}</ion-note>
+      </ion-label>
+      <ion-icon size="small" class="pointer" color="dark" name="return-up-back-outline" slot="end" (click)="untrashPage(page.id)"></ion-icon>
+      <ion-icon size="small" class="pointer" color="dark" name="trash" slot="end" (click)="deletePage(page.id)"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-icon name="chevron-back-outline" class="pointer ion-padding" *ngIf="paginationConfig.pageIndex > 1" (click)="changePage(false)"></ion-icon>
+      <ion-icon
+        *ngIf="paginationConfig.total / paginationConfig.pageIndex > paginationConfig.pageSize"
+        (click)="changePage(true)"
+        name="chevron-forward-outline"
+        class="pointer ion-padding"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
+

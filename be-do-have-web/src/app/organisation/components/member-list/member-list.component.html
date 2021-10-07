@@ -1,0 +1,23 @@
+<ion-content>
+  <ion-title class="ion-padding ion-text-center">Members</ion-title>
+
+  <ion-item *ngIf="paginationConfig.total" lines="none">
+    <ion-chip color="danger" slot="end">Total members: {{ paginationConfig.total }}</ion-chip>
+  </ion-item>
+
+  <ion-item *ngFor="let member of members; index as i">
+    <ion-chip color="danger">{{ paginationConfig.pageSize * (paginationConfig.pageIndex - 1) + i + 1}}</ion-chip>
+    <ion-label>{{ member.fullName }}</ion-label>
+  </ion-item>
+
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-icon name="chevron-back-outline" class="pointer ion-padding" *ngIf="paginationConfig.pageIndex > 1" (click)="changePage(false)"></ion-icon>
+      <ion-icon
+        *ngIf="paginationConfig.total / paginationConfig.pageIndex > paginationConfig.pageSize"
+        (click)="changePage(true)"
+        name="chevron-forward-outline"
+        class="pointer ion-padding"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-content>

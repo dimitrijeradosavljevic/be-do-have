@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "WCQ87B+OvNV+uJInjecyqS18T91ImFD/cBFlO8XD6G/8sgJq+VppTAzrX44SuHbmZfWHoz3JCcsDJDie5BgMgw==",
+  "success": true,
+  "projectFilePath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.ElasticSearch\\BeDoHave.ElasticSearch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dimitrije\\.nuget\\packages\\elasticsearch.net\\7.14.1\\elasticsearch.net.7.14.1.nupkg.sha512",
+    "C:\\Users\\Dimitrije\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\Dimitrije\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dimitrije\\.nuget\\packages\\nest\\7.14.1\\nest.7.14.1.nupkg.sha512",
+    "C:\\Users\\Dimitrije\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Dimitrije\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dimitrije\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

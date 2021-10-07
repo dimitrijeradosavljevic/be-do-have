@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kEZfmx0K1pJ3NWQTSxd+MIwV0eRhNdcrnFpW2Ep15XjZVMA3dVQfVGbpaxtQnE3dvxmHhVBwdHQb1j4kKPWk9A==",
+  "success": true,
+  "projectFilePath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.Models\\BeDoHave.Data.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dimitrije\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

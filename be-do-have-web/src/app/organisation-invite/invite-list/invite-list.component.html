@@ -1,0 +1,36 @@
+<ion-content>
+  <ion-title class="ion-padding-vertical">Invites</ion-title>
+
+  <ion-row *ngIf="loading">
+    <ion-col class="ion-text-center">
+      <ion-spinner></ion-spinner>
+    </ion-col>
+  </ion-row>
+
+  <ng-container *ngIf="!loading">
+    <ng-container *ngIf="invites && invites.length > 0">
+      <ion-item *ngFor="let invite of invites">
+        <ion-label>
+           {{ invite.inviterName }} has invited you to organisation: {{ invite.organisationName }}
+        </ion-label>
+        <ion-chip color="success" (click)="respondOnInvite(invite.id,true)">Accept</ion-chip>
+        <ion-chip color="danger" (click)="respondOnInvite(invite.id,false)">Deny</ion-chip>
+      </ion-item>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-icon name="chevron-back-outline" class="pointer ion-padding" *ngIf="paginationConfig.pageIndex > 1" (click)="changePage(false)"></ion-icon>
+          <ion-icon
+            *ngIf="paginationConfig.total / paginationConfig.pageIndex > paginationConfig.pageSize"
+            (click)="changePage(true)"
+            name="chevron-forward-outline"
+            class="pointer ion-padding"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ng-container>
+
+    <ion-item *ngIf="invites && invites.length == 0">
+      <ion-label>The are no new invites</ion-label>
+    </ion-item>
+  </ng-container>
+
+</ion-content>

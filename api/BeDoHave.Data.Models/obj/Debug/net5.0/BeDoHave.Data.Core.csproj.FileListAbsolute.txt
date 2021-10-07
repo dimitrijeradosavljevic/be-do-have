@@ -1,0 +1,12 @@
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\bin\Debug\net5.0\BeDoHave.Data.Core.deps.json
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\bin\Debug\net5.0\BeDoHave.Data.Core.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\bin\Debug\net5.0\ref\BeDoHave.Data.Core.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\bin\Debug\net5.0\BeDoHave.Data.Core.pdb
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\obj\Debug\net5.0\BeDoHave.Data.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\obj\Debug\net5.0\BeDoHave.Data.Core.AssemblyInfoInputs.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\obj\Debug\net5.0\BeDoHave.Data.Core.AssemblyInfo.cs
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\obj\Debug\net5.0\BeDoHave.Data.Core.csproj.CoreCompileInputs.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\obj\Debug\net5.0\BeDoHave.Data.Core.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\obj\Debug\net5.0\ref\BeDoHave.Data.Core.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\obj\Debug\net5.0\BeDoHave.Data.Core.pdb
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.Models\obj\Debug\net5.0\BeDoHave.Data.Core.csproj.AssemblyReference.cache

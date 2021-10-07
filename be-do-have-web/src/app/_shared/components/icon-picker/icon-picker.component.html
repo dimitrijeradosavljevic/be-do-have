@@ -1,0 +1,34 @@
+<ion-content class="ion-padding">
+  <ion-row>
+    <ion-col size="6">
+      <ion-item>
+        <ion-input [formControl]="form.controls.iconName" placeholder="Search for icon..."></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label>Color</ion-label>
+        <ion-select [formControl]="form.controls.iconColor">
+          <ion-select-option value="{{ null }}">None</ion-select-option>
+          <ion-select-option value="primary">Blue</ion-select-option>
+          <ion-select-option value="success">Green</ion-select-option>
+          <ion-select-option value="warning">Organe</ion-select-option>
+          <ion-select-option value="danger">Red</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-icon name="chevron-back-outline" class="pointer ion-padding" *ngIf="paginationConfig.pageIndex > 1" (click)="changePage(false)"></ion-icon>
+      <ion-icon
+        *ngIf="paginationConfig.total / paginationConfig.pageIndex > paginationConfig.pageSize"
+        (click)="changePage(true)"
+        name="chevron-forward-outline"
+        class="pointer ion-padding"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <ion-icon *ngFor="let icon of searchedIcons" name="{{icon}}" size="large" color="{{ form.controls.iconColor.value }}" (click)="pick(icon)" class="pointer ion-padding"></ion-icon>
+</ion-content>

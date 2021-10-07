@@ -1,0 +1,15 @@
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\bin\Debug\net5.0\BeDoHave.ElasticSearch.deps.json
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\bin\Debug\net5.0\BeDoHave.ElasticSearch.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\bin\Debug\net5.0\ref\BeDoHave.ElasticSearch.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\bin\Debug\net5.0\BeDoHave.ElasticSearch.pdb
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\bin\Debug\net5.0\BeDoHave.Data.Core.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\bin\Debug\net5.0\BeDoHave.Data.Core.pdb
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\obj\Debug\net5.0\BeDoHave.ElasticSearch.csproj.AssemblyReference.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\obj\Debug\net5.0\BeDoHave.ElasticSearch.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\obj\Debug\net5.0\BeDoHave.ElasticSearch.AssemblyInfoInputs.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\obj\Debug\net5.0\BeDoHave.ElasticSearch.AssemblyInfo.cs
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\obj\Debug\net5.0\BeDoHave.ElasticSearch.csproj.CoreCompileInputs.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\obj\Debug\net5.0\BeDoHave.ElasticSearch.csproj.CopyComplete
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\obj\Debug\net5.0\BeDoHave.ElasticSearch.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\obj\Debug\net5.0\ref\BeDoHave.ElasticSearch.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.ElasticSearch\obj\Debug\net5.0\BeDoHave.ElasticSearch.pdb

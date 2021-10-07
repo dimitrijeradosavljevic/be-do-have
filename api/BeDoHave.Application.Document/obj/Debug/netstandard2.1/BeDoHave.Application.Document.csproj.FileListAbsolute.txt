@@ -1,0 +1,9 @@
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Application.Document\bin\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Application.Document\bin\Debug\netstandard2.1\BeDoHave.Data.Core.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Application.Document\bin\Debug\netstandard2.1\BeDoHave.Data.Models.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Application.Document\bin\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.pdb
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Application.Document\bin\Debug\netstandard2.1\BeDoHave.Data.Models.pdb
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Application.Document\obj\Debug\netstandard2.1\BeDoHave.Application.Document.csprojAssemblyReference.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Application.Document\obj\Debug\netstandard2.1\BeDoHave.Application.Document.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Application.Document\obj\Debug\netstandard2.1\BeDoHave.Application.Document.AssemblyInfoInputs.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Application.Document\obj\Debug\netstandard2.1\BeDoHave.Application.Document.AssemblyInfo.cs

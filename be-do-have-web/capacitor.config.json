@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "be-do-have-web",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

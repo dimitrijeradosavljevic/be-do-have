@@ -1,0 +1,86 @@
+<app-header *ngIf="page" [title]="page.path"></app-header>
+
+<ion-content class="page-padding">
+
+  <form [formGroup]="editorForm" (ngSubmit)="onSubmit()" *ngIf="editorFormActive" (keydown.control.enter)="triggerSubmit($event)">
+
+    <ion-row class="title-row">
+      <ion-col class="ion-text-center">
+        <ion-input id="title" formControlName="title" class="title" placeholder="Title..."></ion-input>
+        <ion-note *ngIf="editorForm.controls.iconName.value == null && (!page || page.userId == authUser.id)" class="pointer" (click)="openIconPicker()">Choose icon</ion-note>
+        <ion-icon *ngIf="editorForm.controls.iconName.value != null"
+                  (click)="openIconPicker()"
+                  size="large" class="pointer"
+                  color="{{ editorForm.controls.iconColor.value }}"
+                  name="{{ editorForm.controls.iconName.value }}"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="page && page.user">
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label><b>{{ page.user.fullName }}</b>, {{ page.createdAt }}, <ion-chip color="primary">{{ minutesRead }} min read</ion-chip></ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="page && page.descendants && page.descendants.length > 0">
+      <ion-col>
+        <ion-item routerLink="/pages/{{descendant.id}}" *ngFor="let descendant of page.descendants" lines="none">
+          <ion-icon *ngIf="descendant.iconName && descendant.iconName != ''" class="ion-padding-end" name="{{ descendant.iconName }}" color="{{ descendant.iconColor }}"></ion-icon>
+          <ion-label>{{ descendant.title }}</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+
+<!--    <ion-row>-->
+<!--      <ion-col>-->
+<!--        <ion-item lines="none">-->
+<!--          <ion-chip color="primary" slot="end">{{ minutesRead }} min read</ion-chip>-->
+<!--        </ion-item>-->
+<!--      </ion-col>-->
+<!--    </ion-row>-->
+
+
+    <ion-row *ngIf="!page || authUser.id == page.userId">
+      <ion-col size="12">
+        <ion-item lines="none">
+            <ion-icon name="add-circle-outline" *ngIf="selectedTags.length < 5" (click)="openTagPicker()" size="large" class="ion-padding-end pointer" color="dark"></ion-icon>
+            <ion-text>{{ selectedTags.length < 5 ? 'Add tags' : 'Tags' }}{{ (selectedTags.length > 0 ? ':' : '') }}</ion-text>
+          <ion-chip *ngFor="let tag of selectedTags"  color="warning">
+            {{ tag.name }}
+            <ion-icon name="close-outline" size="small" (click)="tagDeSelected(tag.id)"></ion-icon>
+          </ion-chip>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+
+<!--    <ion-row *ngIf="pageFilter">-->
+<!--      <ion-col>-->
+<!--        <ion-item lines="none">-->
+<!--          <ion-input [formControl]="pageFilter" placeholder="Search in page..."></ion-input>-->
+<!--        </ion-item>-->
+<!--      </ion-col>-->
+<!--    </ion-row>-->
+
+    {{ highlightedContent }}
+
+    <ion-row>
+      <ion-col>
+        <quill-editor
+          id="content"
+          formControlName="content"
+          [readOnly]="page && authUser.id != page.userId"
+          [styles]="editorStyle"
+          placeholder="Enter content here..."
+          (onContentChanged)="onContentChanged($event)"
+          [disabled]="true"
+        >
+    </quill-editor>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
+

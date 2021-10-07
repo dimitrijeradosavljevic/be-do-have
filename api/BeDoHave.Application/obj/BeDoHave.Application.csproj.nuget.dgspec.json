@@ -1,0 +1,389 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Application\\BeDoHave.Application.csproj": {}
+  },
+  "projects": {
+    "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Application\\BeDoHave.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Application\\BeDoHave.Application.csproj",
+        "projectName": "BeDoHave.Application",
+        "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Application\\BeDoHave.Application.csproj",
+        "packagesPath": "C:\\Users\\Dimitrije\\.nuget\\packages\\",
+        "outputPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dimitrije\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.AccessLayer\\BeDoHave.Data.AccessLayer.csproj": {
+                "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.AccessLayer\\BeDoHave.Data.AccessLayer.csproj"
+              },
+              "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.Models\\BeDoHave.Data.Core.csproj": {
+                "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.Models\\BeDoHave.Data.Core.csproj"
+              },
+              "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.ElasticSearch\\BeDoHave.ElasticSearch.csproj": {
+                "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.ElasticSearch\\BeDoHave.ElasticSearch.csproj"
+              },
+              "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Shared\\BeDoHave.Shared.csproj": {
+                "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Shared\\BeDoHave.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.AccessLayer\\BeDoHave.Data.AccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.AccessLayer\\BeDoHave.Data.AccessLayer.csproj",
+        "projectName": "BeDoHave.Data.AccessLayer",
+        "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.AccessLayer\\BeDoHave.Data.AccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Dimitrije\\.nuget\\packages\\",
+        "outputPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.AccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dimitrije\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.Models\\BeDoHave.Data.Core.csproj": {
+                "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.Models\\BeDoHave.Data.Core.csproj"
+              },
+              "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.ElasticSearch\\BeDoHave.ElasticSearch.csproj": {
+                "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.ElasticSearch\\BeDoHave.ElasticSearch.csproj"
+              },
+              "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Shared\\BeDoHave.Shared.csproj": {
+                "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Shared\\BeDoHave.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.Models\\BeDoHave.Data.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.Models\\BeDoHave.Data.Core.csproj",
+        "projectName": "BeDoHave.Data.Core",
+        "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.Models\\BeDoHave.Data.Core.csproj",
+        "packagesPath": "C:\\Users\\Dimitrije\\.nuget\\packages\\",
+        "outputPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dimitrije\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.ElasticSearch\\BeDoHave.ElasticSearch.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.ElasticSearch\\BeDoHave.ElasticSearch.csproj",
+        "projectName": "BeDoHave.ElasticSearch",
+        "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.ElasticSearch\\BeDoHave.ElasticSearch.csproj",
+        "packagesPath": "C:\\Users\\Dimitrije\\.nuget\\packages\\",
+        "outputPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.ElasticSearch\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dimitrije\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.Models\\BeDoHave.Data.Core.csproj": {
+                "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Data.Models\\BeDoHave.Data.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.14.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Shared\\BeDoHave.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Shared\\BeDoHave.Shared.csproj",
+        "projectName": "BeDoHave.Shared",
+        "projectPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Shared\\BeDoHave.Shared.csproj",
+        "packagesPath": "C:\\Users\\Dimitrije\\.nuget\\packages\\",
+        "outputPath": "D:\\Faks\\Diplomski\\be-do-have\\api\\BeDoHave.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dimitrije\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

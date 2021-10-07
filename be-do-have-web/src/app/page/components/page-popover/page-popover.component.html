@@ -1,0 +1,16 @@
+<ion-content>
+  <ion-list>
+    <ion-item (click)="goToCreateSubPage()">
+      <ion-icon size="small" class="ion-padding-end" color="dark" name="add-outline"></ion-icon>
+      <ion-label>Add a page inside</ion-label>
+    </ion-item>
+    <ion-item (click)="openPageMove()">
+      <ion-icon size="small" class="ion-padding-end" color="dark" name="apps"></ion-icon>
+      <ion-label>Move under</ion-label>
+    </ion-item>
+    <ion-item lines="none" (click)="trashPage()">
+      <ion-icon size="small" class="ion-padding-end" color="dark" name="trash"></ion-icon>
+      <ion-label>Delete</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

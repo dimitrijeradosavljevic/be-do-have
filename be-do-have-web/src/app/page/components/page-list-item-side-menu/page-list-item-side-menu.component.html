@@ -1,0 +1,21 @@
+<ion-item button detail="false" color="medium" lines="none">
+  <ion-icon (click)="page.open = !page.open" slot="start" *ngIf="page.open" name="caret-down-sharp" color="dark"
+            size="small" class="open ion-no-padding"></ion-icon>
+  <ion-icon (click)="page.open = !page.open" slot="start" *ngIf="!page.open" name="caret-forward-sharp"
+            color="dark" size="small" class="ion-no-padding"></ion-icon>
+  <ion-icon *ngIf="page.iconName" slot="start" routerLink="/pages/{{page.id}}" name="{{ page.iconName }}" color="{{ page.iconColor }}" size="small"></ion-icon>
+  <!--  <ion-icon slot="start" *ngIf="!page.open" name="{{page.icon}}" color="dark" size="small"></ion-icon>-->
+  <ion-label routerLink="/pages/{{page.id}}">{{ page.title }}</ion-label>
+  <ion-icon slot="end" name="ellipsis-horizontal" color="dark" size="small" (click)="presentPopover($event)"></ion-icon>
+  <ion-icon slot="end" name="add" color="dark" size="small" (click)="goToCreateSubPage()"></ion-icon>
+</ion-item>
+
+<div style="padding-left: 20px; background-color: var(--ion-color-medium)">
+  <ion-list *ngIf="page.open && page.descedants?.length > 0">
+    <app-page-list-item-side-menu *ngFor="let child of page.descedants" [page]="child"></app-page-list-item-side-menu>
+  </ion-list>
+
+  <ion-item *ngIf="page.open && page.descedants?.length == 0" color="medium" lines="none">
+    <ion-label><ion-text color="warning">No pages inside</ion-text></ion-label>
+  </ion-item>
+</div>

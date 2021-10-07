@@ -1,0 +1,73 @@
+<ion-content>
+  <ion-row style="margin-top: 100px">
+    <ion-col class="ion-text-center">
+      <h2>BeDoHave</h2>
+    </ion-col>
+  </ion-row>
+  <form [formGroup]="loginForm" *ngIf="formActive" (ngSubmit)="login()" (keydown.enter)="login()" style="margin-top: 50px">
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXs="12" sizeMd="6" sizeXl="5">
+        <div class="form-group">
+          <ion-input type="email"
+                     placeholder="Email"
+                     [autofocus]="true"
+                     formControlName="email"
+          ></ion-input>
+          <ion-label
+            *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.required"
+            class="small-1"
+            color="danger"
+          >Email is required
+          </ion-label>
+          <ion-label
+            *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.email"
+            class="small-1"
+            color="danger"
+          >Email is not valid
+          </ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXs="12" sizeMd="6" sizeXl="5">
+        <div class="form-group">
+          <ion-input #password
+                     type="password"
+                     placeholder="Password"
+                     formControlName="password"
+          >
+          </ion-input>
+<!--          <ion-icon name="eye"-->
+<!--                    class="show-right-icon-input"-->
+<!--                    (click)="showPassword(password)"-->
+<!--          ></ion-icon>-->
+          <ion-label
+            *ngIf="loginForm.controls.password.touched && loginForm.controls.password.errors?.required"
+            class="small-1"
+            color="danger"
+          >Password is required
+          </ion-label>
+          <ion-label
+            *ngIf="loginForm.controls.password.touched && loginForm.controls.password.errors?.minlength"
+            class="small-1"
+            color="danger"
+          >Password must have 8 characters minimum
+          </ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center ion-margin-vertical">
+      <ion-col sizeXs="12" sizeMd="6" sizeXl="5" class="ion-text-center">
+        <ion-button color="primary" type="submit" [disabled]="loginForm.invalid">Login</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center mt-10">
+      <ion-col size="auto">
+        <ion-label class="no-account">You don't have an account? <a routerLink="/register">Register</a>
+        </ion-label>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>

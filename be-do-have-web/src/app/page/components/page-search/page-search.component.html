@@ -1,0 +1,146 @@
+<ion-content>
+
+<!--  <ion-item lines="none">-->
+  <ion-row>
+    <ion-col>
+
+<!--    <ion-icon *ngIf="!loading" class="ion-padding-end" color="dark" name="search-outline"></ion-icon>-->
+<!--    <ion-spinner *ngIf="loading" color="primary" name="crescent"></ion-spinner>-->
+    <!--    <ion-input placeholder="Search through your pages..." [formControl]="this.filterForm.controls.term"></ion-input>-->
+    <ng-autocomplete
+      placeholder="Search through your pages..."
+      [data]="suggestions"
+      [heading]="null"
+      [itemTemplate]="itemTemplate"
+      [customFilter]="customFilter"
+      (inputChanged)='onChangeSearch($event)'>
+    </ng-autocomplete>
+    <ng-template #itemTemplate let-item>
+      <a [innerHTML]="item"></a>
+    </ng-template>
+    </ion-col>
+  </ion-row>
+<!--  </ion-item>-->
+
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-item *ngIf="!showFilters" class="ion-no-padding pointer" lines="none" (click)="showFilters = !showFilters">
+        <ion-icon slot="end" size="small" name="add-circle-outline" color="primary"></ion-icon>
+        <ion-note class="ion-no-margin ion-no-padding ion-padding-vertical" color="primary" slot="end">Add filter
+        </ion-note>
+      </ion-item>
+      <form [formGroup]="filterForm">
+        <ng-container *ngIf="showFilters">
+          <ion-item class="ion-no-padding pointer" lines="none" (click)="showFilters = !showFilters">
+            <ion-icon slot="end" size="small" name="checkmark-outline" color="primary"></ion-icon>
+            <ion-note class="ion-no-margin ion-no-padding ion-padding-vertical" color="primary" slot="end">Finish
+            </ion-note>
+          </ion-item>
+          <ion-row>
+            <ion-col size="6">
+              <ion-item lines="none">
+                <ion-checkbox slot="start" formControlName="titleOnly"></ion-checkbox>
+                <ion-label>Only match titles</ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col size="6">
+              <ion-item lines="none">
+                <ion-label>Created By</ion-label>
+                <ion-input formControlName="author" placeholder="Add author..."></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="6">
+              <app-date-picker-range
+                [title]="'Created'"
+                [start]="filterForm.controls.createdAtStart"
+                [end]="filterForm.controls.createdAtEnd"
+              >
+              </app-date-picker-range>
+            </ion-col>
+            <ion-col size="6">
+              <app-date-picker-range
+                [title]="'Updated'"
+                [start]="filterForm.controls.updatedAtStart"
+                [end]="filterForm.controls.updatedAtEnd"
+              >
+              </app-date-picker-range>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <ion-item lines="none" class="pointer">
+                <ng-container>
+                  <ion-icon name="add-circle-outline" (click)="openTagPicker()" size="large" class="ion-padding-end" color="success"></ion-icon>
+                  <ion-label>Filter with tags{{ (selectedTags.length > 0 ? ':' : '') }}</ion-label>
+                </ng-container>
+              </ion-item>
+              <ion-chip *ngFor="let tag of selectedTags" color="success">
+                {{ tag.name }}
+                <ion-icon name="close-outline" size="small" (click)="tagDeSelected(tag.id)"></ion-icon>
+              </ion-chip>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <ion-list>
+                <ion-item lines="none">
+                  <ion-icon name="add-circle-outline" class="pointer ion-padding-end" (click)="openPagePicker($event)" size="large" color="success"></ion-icon>
+                  <ion-label>Search in page</ion-label>
+                </ion-item>
+                <ion-item *ngFor="let picked of pickedPages">
+                  <ion-label>{{ picked.title }}</ion-label>
+                  <ion-icon class="pointer" slot="end" size="small" name="close-outline" (click)="unpickPage(picked.id)"></ion-icon>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+
+        </ng-container>
+      </form>
+    </ion-col>
+  </ion-row>
+
+  <ion-row *ngIf="loading">
+    <ion-col class="ion-text-center">
+      <ion-spinner color="primary" name="crescent"></ion-spinner>
+    </ion-col>
+  </ion-row>
+
+  <ion-list *ngIf="!loading">
+    <ion-row *ngFor="let page of pages" (click)="gotoPage(page.id)" class="pointer">
+      <ion-col class="ion-no-padding">
+        <ion-item>
+          <ion-icon class="ion-padding-end" color="dark" size="small" name="search-outline"></ion-icon>
+          <ion-label>
+            <h3>
+              {{ page.title }},
+              <ng-container *ngIf="page.highlightedContent != null">
+                <ion-note *ngIf="page.highlightedContent['author.fullName']"
+                          [innerHtml]="'Author: ' + page.highlightedContent['author.fullName'][0]"></ion-note>
+              </ng-container>
+            </h3>
+            <ng-container *ngIf="page.highlightedContent != null">
+              <!--              <ion-note *ngIf="page.highlightedContent['author.fullName']" [innerHtml]="'Author: ' + page.highlightedContent['author.fullName'][0]"></ion-note>-->
+              <ion-note *ngIf="page.highlightedContent['content']"
+                        [innerHtml]="'Content: ' + page.highlightedContent['content'][0]"></ion-note>
+            </ng-container>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+
+  <!--  <ion-list>-->
+  <!--    <ion-list-header>-->
+  <!--      <ion-text size="small">RECENT SEARCHES</ion-text>-->
+  <!--    </ion-list-header>-->
+  <!--    <ion-item>-->
+  <!--      <ion-icon class="ion-padding-end" size="small" color="dark" name="search-outline"></ion-icon>-->
+  <!--      <ion-text>Sabali</ion-text>-->
+  <!--    </ion-item>-->
+  <!--  </ion-list>-->
+
+</ion-content>

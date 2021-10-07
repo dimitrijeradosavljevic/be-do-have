@@ -1,0 +1,33 @@
+<ion-item *ngIf="filter">
+  <ion-input [formControl]="filter" placeholder="Choose tags"></ion-input>
+  <ion-chip *ngIf="withCreate && filter.value != '' && matchTag()" color="danger" (click)="createTag()">Create</ion-chip>
+</ion-item>
+
+<ng-container *ngIf="!loading && tags && tags.length > 0">
+
+  <ion-item *ngFor="let tag of tags">
+    <ion-label>{{ tag.name }}</ion-label>
+    <ion-chip color="danger" (click)="pick(tag)">Pick</ion-chip>
+  </ion-item>
+
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-icon name="chevron-back-outline" class="pointer ion-padding" *ngIf="tagPaginationConfig.pageIndex > 1" (click)="changePage(false)"></ion-icon>
+      <ion-icon
+        *ngIf="tagPaginationConfig.total / tagPaginationConfig.pageIndex > tagPaginationConfig.pageSize"
+        (click)="changePage(true)"
+        name="chevron-forward-outline"
+        class="pointer ion-padding"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ng-container>
+
+<ion-row *ngIf="loading">
+  <ion-col class="ion-text-center">
+    <ion-spinner></ion-spinner>
+  </ion-col>
+</ion-row>
+
+<ion-item *ngIf="!loading && (!tags || tags.length == 0)">
+  <ion-label>There are no tags</ion-label>
+</ion-item>

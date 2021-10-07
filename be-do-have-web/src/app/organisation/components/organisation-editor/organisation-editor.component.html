@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true">
+  <ion-title class="ion-text-center ion-margin-vertical">
+    Organisation {{ (organisationId ? "Edit" : "Create") }}
+  </ion-title>
+
+  <form [formGroup]="editorForm" (ngSubmit)="onSubmit()" *ngIf="editorFormActive">
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating" for="name">Name</ion-label>
+          <ion-input id="name" formControlName="name"></ion-input>
+        </ion-item>
+        <div *ngIf="editorForm.controls.name.invalid && submitted">
+          <ion-label color="danger">Name field is required</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center ion-margin-vertical">
+      <ion-button type="submit" color="primary" *ngIf="!loading">{{ (organisationId ? 'Save' : 'Add') }}</ion-button>
+      <ion-spinner *ngIf="loading" color="primary" name="circles"></ion-spinner>
+    </ion-row>
+  </form>
+
+  <ion-row *ngIf="organisationId && userFilter">
+    <ion-col>
+      <ion-item>
+        <ion-input placeholder="Search for new members..." [formControl]="userFilter"></ion-input>
+      </ion-item>
+      <ion-item *ngFor="let user of users">
+        <ion-label>{{ user.fullName }}</ion-label>
+        <ion-chip slot="end" color="primary" (click)="inviteUserToOrganisation(user.id)">Invite</ion-chip>
+      </ion-item>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-icon name="chevron-back-outline" class="pointer ion-padding" *ngIf="paginationConfig.pageIndex > 1" (click)="changePage(false)"></ion-icon>
+          <ion-icon
+            *ngIf="paginationConfig.total / paginationConfig.pageIndex > paginationConfig.pageSize"
+            (click)="changePage(true)"
+            name="chevron-forward-outline"
+            class="pointer ion-padding"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-content>

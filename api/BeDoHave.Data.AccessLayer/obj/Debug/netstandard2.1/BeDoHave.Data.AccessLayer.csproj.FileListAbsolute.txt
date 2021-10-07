@@ -1,0 +1,15 @@
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\bin\Debug\netstandard2.1\BeDoHave.Data.Models.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\obj\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.AssemblyInfoInputs.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\obj\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.AssemblyInfo.cs
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\obj\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.csproj.CoreCompileInputs.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\bin\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.deps.json
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\bin\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\bin\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.pdb
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\bin\Debug\netstandard2.1\BeDoHave.Data.Models.pdb
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\obj\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.csproj.CopyComplete
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\obj\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\obj\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.pdb
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\obj\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.csproj.AssemblyReference.cache
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\obj\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\bin\Debug\netstandard2.1\BeDoHave.Data.Core.dll
+D:\Faks\Diplomski\be-do-have\api\BeDoHave.Data.AccessLayer\obj\Debug\netstandard2.1\BeDoHave.Data.AccessLayer.csprojAssemblyReference.cache

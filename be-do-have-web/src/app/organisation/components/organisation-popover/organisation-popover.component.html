@@ -1,0 +1,25 @@
+<ion-content>
+  <ion-list>
+    <ion-item class="pointer" (click)="openOrganisationEditorModal(false)">
+      <ion-icon size="small" class="ion-padding-end" color="dark" name="add-outline"></ion-icon>
+      <ion-label>Add new organisation</ion-label>
+    </ion-item>
+    <ion-item class="pointer" (click)="openMembersModal()" *ngIf="selectedOrganisation && selectedOrganisation.id != -1">
+      <ion-icon size="small" color="dark" class="ion-padding-end" name="list-outline"></ion-icon>
+      <ion-label>View members</ion-label>
+    </ion-item>
+    <ion-item
+      class="pointer"
+      (click)="openOrganisationEditorModal(true)"
+      *ngIf="selectedOrganisation && selectedOrganisation.id != -1 && selectedOrganisation.author.id == authUser.id">
+      <ion-icon size="small" class="ion-padding-end" color="dark" name="create-outline"></ion-icon>
+      <ion-label>Edit</ion-label>
+    </ion-item>
+    <ion-item
+      class="pointer"
+      *ngIf="selectedOrganisation && selectedOrganisation.id != -1 && selectedOrganisation.author.id == authUser.id">
+      <ion-icon size="small" class="ion-padding-end" color="dark" name="trash"></ion-icon>
+      <ion-label>Delete</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

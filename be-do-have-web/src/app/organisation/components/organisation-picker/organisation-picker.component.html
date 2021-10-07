@@ -1,0 +1,11 @@
+<ion-toolbar color="medium" lines="none">
+  <ion-item color="medium" lines="none">
+    <ion-select interface="popover" value="-1" selectedText="{{selected.name}}" (ionChange)="onOrganisationChange($event)">
+      <ion-select-option value="-1">Private</ion-select-option>
+      <ion-select-option *ngFor="let organisation of organisations" value="{{ organisation.id }}">
+        {{ organisation.name }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-icon slot="end" class="ion-padding-end pointer" name="ellipsis-horizontal" color="dark" size="small" (click)="presentOrganisationPopover($event)"></ion-icon>
+</ion-toolbar>
